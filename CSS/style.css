@@ -11,8 +11,8 @@ body{
     height: auto;
 }
 header{
-    position: static;
-    top: 3px;
+    position: relative;
+    top: 8px;
     width: 99%;
     height: 94px;
     background-color: rgba(151, 162, 72, 0.728);
