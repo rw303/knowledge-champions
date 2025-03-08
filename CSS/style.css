@@ -198,7 +198,6 @@ animation-iteration-count: infinite;
     background: #ff3300;
     box-shadow: 0 0 20px rgba(255, 51, 0, 0.9);
 }
-
 /* تأثير الظهور */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -561,4 +560,146 @@ footer {
     font-size: 0.9rem;
     border-top: 1px solid #444;
     padding-top: 10px;
+}
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .content ul li {
+        font-size: 26px;
+    }
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 95%;
+        height: auto;
+    }
+    .content {
+        margin-right: 20px;
+    }
+    .content ul li {
+        font-size: 22px;
+        padding: 0 10px;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .callme {
+        top: 10%;
+        left: 8%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 80px;
+    }
+    .logo img {
+        width: 70px;
+        height: 50px;
+    }
+    .content ul li {
+        font-size: 18px;
+        padding: 0 8px;
+    }
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .callme {
+        top: 12%;
+        left: 5%;
+    }
+    .services h2 {
+        font-size: 2rem;
+    }
+    .services {
+        padding: 40px 15px;
+    }
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider-container {
+        width: 300%;
+    }
+}
+
+@media (max-width: 576px) {
+    .content {
+        float: none;
+        text-align: center;
+        margin-right: 0;
+    }
+    .content ul {
+        padding: 0;
+    }
+    .content ul li {
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    .hero-section {
+        height: 80vh;
+    }
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    .hero-content p {
+        font-size: 0.8rem;
+    }
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+    .services {
+        padding: 30px 10px;
+    }
+    .services h2 {
+        font-size: 1.8rem;
+    }
+    .slider-container {
+        flex-wrap: nowrap;
+        width: 400%;
+    }
+    .review {
+        max-width: 90%;
+    }
+    .contact-options {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 1.3rem;
+    }
+    .hero-content p {
+        font-size: 0.7rem;
+    }
+    .cta-button {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+    .services h2 {
+        font-size: 1.6rem;
+    }
+    .slider-container {
+        width: 500%;
+    }
 }
