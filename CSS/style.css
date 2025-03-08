@@ -43,16 +43,18 @@ header{
 }
 .callme
 {
-  width: 34px;
-    height: 20px;
-    margin:20px;
-   animation: zoom_in 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0ms infinite alternate ;
+    
+    position: absolute;
+    top:9px;
+    left: 11.5%;
+   background-color: rgba(38, 34, 34, 0.788);
+   border-radius: 13px;
 }
 
 .callme a img
 {
-    width: 76px;
-    height: 31px;
+    width: 34px;
+    height: 20px;
     margin:20px;
    animation: zoom_in 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0ms infinite alternate ;
 }
@@ -179,7 +181,6 @@ animation-iteration-count: infinite;
     color: #1cdcd2;    
 }
 
-/* زر CTA */
 .cta-button {
     display: inline-block;
     padding: 12px 24px;
@@ -196,12 +197,11 @@ animation-iteration-count: infinite;
     background: #ff3300;
     box-shadow: 0 0 20px rgba(255, 51, 0, 0.9);
 }
-/* تأثير الظهور */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
- /* تصميم عام */
 .services {
     height: auto;
     text-align: center;
@@ -212,7 +212,6 @@ animation-iteration-count: infinite;
     
 }
 
-/* العنوان */
 .services h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
@@ -221,7 +220,7 @@ animation-iteration-count: infinite;
     box-shadow: 4px 4px 9px rgb(59, 59, 164);
 }
 
-/* شريط التمرير */
+
 .slider {
     width: 100%;
     overflow: hidden;
@@ -229,7 +228,6 @@ animation-iteration-count: infinite;
     padding: 20px 0;
 }
 
-/* الحاوية الرئيسية */
 .slider-container {
     display: flex;
     gap: 20px;
@@ -237,7 +235,6 @@ animation-iteration-count: infinite;
     width: 200%;
 }
 
-/* تأثير التدرج على الأطراف */
 .slider::before,
 .slider::after {
     content: "";
@@ -259,7 +256,6 @@ animation-iteration-count: infinite;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
 }
 
-/* الصور */
 .slider-container img {
     width: 250px;
     height: auto;
@@ -270,24 +266,20 @@ animation-iteration-count: infinite;
     transform: scale(0.8);
 }
 
-/* عند ظهور الصور */
 .slider-container img.appear {
     opacity: 1;
     transform: scale(1);
 }
 
-/* تأثير التمويه أثناء الحركة */
 @keyframes slide {
     0% { transform: translateX(0); filter: blur(2px); }
     100% { transform: translateX(-50%); filter: blur(0px); }
 }
 
-/* تأثير الإضاءة عند تمرير الماوس */
 .slider-container img:hover {
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.9);
 }
 
-/* زر عرض المزيد */
 .view-more {
     margin-top: 40px;
     padding: 10px 20px;
@@ -358,7 +350,6 @@ animation-iteration-count: infinite;
     box-shadow: 0 5px 20px rgba(255, 255, 255, 0.5);
 }
 
-/* زر عرض المزيد */
 #loadMore {
     margin-top: 20px;
     padding: 10px 20px;
