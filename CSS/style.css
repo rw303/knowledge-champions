@@ -776,3 +776,24 @@ footer {
         width: 500%;
     }
 }
+
+/* ✅ تحسين التجاوب */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
