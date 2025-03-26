@@ -122,6 +122,79 @@ animation-iteration-count: infinite;
     border-radius: 17px;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        top: 0;
+        border-radius: 0;
+        padding: 10px 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        background-color: rgba(1, 0, 0, 0.9);
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    .logo img {
+        width: 70px;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .callme {
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        background-color: transparent;
+    }
+
+    .callme a img {
+        width: 40px;
+        height: auto;
+        margin: 5px;
+    }
+
+    .content {
+        float: none;
+        text-align: center;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .content ul {
+        padding: 0;
+    }
+
+    .content ul li {
+        display: block;
+        padding: 5px 0;
+        font-size: 20px;
+    }
+
+    #namePlatforms {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
   /* end Header */
  /* ----------------------------------------------------------------------*/
 
