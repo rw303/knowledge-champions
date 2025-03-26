@@ -60,7 +60,7 @@ header{
 {
     width: 34px;
     height: 20px;
-    margin:20px;
+    margin:12px;
    animation: zoom_in 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0ms infinite alternate ;
 }
 @keyframes  zoom_in{
@@ -77,7 +77,6 @@ header{
     float: left;
     width: 14%;
     height: 50px;
-    margin-left: 25px;
 }
 .logo > img
 {
@@ -129,77 +128,90 @@ animation-iteration-count: infinite;
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        position: fixed;
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-        top: 0;
-        border-radius: 0;
-        padding: 10px 0;
-    }
+  header{
+    position: static;
+    top: 3px;
+    width: 99%;
+    height: 94px;
+    background-color: rgba(151, 162, 72, 0.728);
+    margin-left: 8px;
+    border-radius: 18px;
+    align-content: center;
+    z-index: 1000;
+}
+.container{
+    display: inline-block;
+    width: 98%;
+    height: 80px;
+    text-align: center;
+    background-color: rgba(1, 0, 0, 0.788);
+    align-content: center;
+    border-radius: 18px;
+}
+#namePlatforms
+{
+    position: absolute;
+    top: -1.5%;
+    left: 26px;
+    color: #29408af0;
+    font-weight:bold;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 1px 3px 10px rgba(14, 19, 43, 0.667);
+}
+.callme
+{
+    
+    position: absolute;
+    top:9px;
+    left: 11.5%;
+   background-color: rgba(38, 34, 34, 0.788);
+   border: 2px solid rgba(0, 0, 0, 0.658);
+   border-radius: 13px;
+   width: 29%;
+   position: static;
+   
+}
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        width: 100%;
-        background-color: rgba(1, 0, 0, 0.9);
+.callme a img
+{
+    width: 34px;
+    height: 20px;
+    margin:20px;
+   animation: zoom_in 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0ms infinite alternate ;
+}
+@keyframes  zoom_in{
+  
+    0%{
+        transform: scale(1.1);
     }
-
-    .logo {
-        width: 100%;
-        text-align: center;
-        float: none;
-    }
-
-    .logo img {
-        width: 70px;
-        height: auto;
-        margin-right: 0;
-    }
-
-    .callme {
-        position: static;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        background-color: transparent;
-    }
-
-    .callme a img {
-        width: 40px;
-        height: auto;
-        margin: 5px;
-    }
-
-    .content {
-        float: none;
-        text-align: center;
-        margin-right: 0;
-        width: 100%;
-    }
-
-    .content ul {
-        padding: 0;
-    }
-
-    .content ul li {
-        display: block;
-        padding: 5px 0;
-        font-size: 20px;
-    }
-
-    #namePlatforms {
-        position: relative;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-size: 16px;
+    100%{
+        transform: scale(1.2);
     }
 }
+.logo 
+{
+    float: left;
+    width: 14%;
+    height: 50px;
+}
+.logo > img
+{
+    width: 68px;
+    height: 47px;
+   margin-right: 200px;
+   border-radius: 8px;
+
+}
+.logo > img:hover
+{
+animation-name: open;
+animation-duration: 4s;
+animation-timing-function: ease-in-out;
+animation-delay:0.5s;
+animation-iteration-count: infinite;
+}
+
 
   /* end Header */
  /* ----------------------------------------------------------------------*/
