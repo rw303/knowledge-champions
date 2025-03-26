@@ -54,24 +54,24 @@ header {
     left: 0;
     background-color: rgba(38, 34, 34, 0.788);
     border-radius: 13px;
-    display: flex;
+    display: fixed;
     align-items: center;
     justify-content: center;
 }
 
 .callme a img {
-    width: 76px;
-    height: 31px;
-    margin: 10px;
+    width: 52px;
+    height: 25px;
+    margin: 7px;
     animation: zoom_in 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) infinite alternate;
 }
 
 @keyframes zoom_in {
     0% {
-        transform: scale(1.4);
+        transform: scale(1.1);
     }
     100% {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 }
 
