@@ -565,7 +565,8 @@ footer {
     header {
         position:fixed;
         top: 3px;
-        width: 95%;
+        left: 2px;
+        width: 93%;
         height: 70px;
         background-color: rgb(0, 0, 0);
         margin-left: 1px;
@@ -581,7 +582,7 @@ footer {
     
     .logo {
         position: absolute;
-        top:6px;
+        top:10px;
         left: 5px;
         width: 40px;
         height: 49px;
@@ -627,9 +628,9 @@ footer {
     .callme {
         position: relative;
         top: 4px;
-        left: 46px;
+        left: 49px;
         border: 2px solid white;
-        width: 80px;
+        width: 83px;
         height: 35px;
         background-color: rgba(18, 17, 17, 0.852);
         padding:0 -76px;
@@ -655,7 +656,7 @@ footer {
     .content {
         text-align: center;
         padding: 0 1px;
-        margin-left: 47px;
+        margin-left: 51px;
     }
     
     .content ul {
@@ -684,4 +685,84 @@ footer {
         color: white;
         border-radius: 17px;
     }
+
+
+        .services {
+        height: auto;
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(to right, #a8a8a8, #d7e7f8);
+        color: white;
+        overflow: hidden;
+        
+    }
+
+    .services h2 {
+        font-size: 1.7rem;
+        margin-bottom: 26px;
+        font-weight: bold;
+        background-color: rgba(130, 45, 45, 0.557);
+        box-shadow: 4px 4px 9px rgb(59, 59, 164);
+    }
+
+
+    .slider {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding: 20px 0;
+    }
+
+    .slider-container {
+        display: flex;
+        gap: 23px;
+        animation: slide 15s linear infinite;
+        width: 1500%;
+    }
+
+    .slider::before,
+    .slider::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 50px;
+        height: 90%;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .slider::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+    }
+
+    .slider::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+    }
+
+    .slider-container img {
+        width: 220px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s, box-shadow 0.3s;
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    .slider-container img.appear {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    @keyframes slide {
+        0% { transform: translateX(0); filter: blur(2px); }
+        100% { transform: translateX(-50%); filter: blur(0px); }
+    }
+
+    .slider-container img:hover {
+        box-shadow: 0 10px 20px rgba(255, 255, 255, 0.9);
+    }
+
 }
