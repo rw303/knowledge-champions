@@ -582,7 +582,8 @@ footer {
     .logo {
         position: absolute;
         top:10px;
-        width: 46px;
+        left: 5px;
+        width: 40px;
         height: 49px;
     }
     #namePlatforms {
@@ -600,7 +601,7 @@ footer {
     .logo > img {
         position: relative;
         top: -13px;
-        width: 41px;
+        width: 39px;
         height: 37px;
         border-radius: 8px;
     }
@@ -615,7 +616,7 @@ footer {
     
     @keyframes open {
         0% {
-            transform: translateY(-5px);
+            transform: translateY(-2px);
         }
         100% {
             transform: translateY(10px);
@@ -626,7 +627,7 @@ footer {
     .callme {
         position: relative;
         top: 4px;
-        left: 58px;
+        left: 49px;
         border: 2px solid white;
         width: 83px;
         height: 35px;
@@ -636,7 +637,7 @@ footer {
         box-shadow: 1px 3px 10px rgba(244, 237, 237, 0.667);
     }
     .callme a img {
-       margin: 8px;
+       margin: 6px;
         width: 17px;
         height: 16px;
         animation: zoom_in 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) infinite alternate;
@@ -644,19 +645,17 @@ footer {
     
     @keyframes zoom_in {
         0% {
-            transform: scale(1.4);
+            transform: scale(1.0);
         }
         100% {
-            transform: scale(1.5);
+            transform: scale(1.2);
         }
     }
     
-
-
     .content {
         text-align: center;
         padding: 0 1px;
-        margin-left: 56px;
+        margin-left: 51px;
     }
     
     .content ul {
