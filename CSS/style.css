@@ -565,7 +565,6 @@ footer {
     header {
         position:fixed;
         top: 3px;
-        left: 2px;
         width: 93%;
         height: 70px;
         background-color: rgb(0, 0, 0);
@@ -628,9 +627,9 @@ footer {
     .callme {
         position: relative;
         top: 4px;
-        left: 49px;
+        left: 46px;
         border: 2px solid white;
-        width: 83px;
+        width: 80px;
         height: 35px;
         background-color: rgba(18, 17, 17, 0.852);
         padding:0 -76px;
@@ -656,7 +655,7 @@ footer {
     .content {
         text-align: center;
         padding: 0 1px;
-        margin-left: 51px;
+        margin-left: 47px;
     }
     
     .content ul {
